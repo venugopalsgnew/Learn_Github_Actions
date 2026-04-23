@@ -11,5 +11,7 @@ jobs:
         run: printenv
       - name: Print full GitHub context
         run: echo '${{ toJson(github) }}'      
-      - name: Print full GitHub context
-        run: echo '${{ github }}'
+      - name: Github Reponame
+        run: echo '${{ github.repository }}'
+      - name: Github actor
+        run: echo '${{ github.actor }}'
