@@ -15,3 +15,5 @@ jobs:
         run: echo '${{ github.repository }}'
       - name: Github actor
         run: echo '${{ github.actor }}'
+      - name: Github actor
+        run: echo '${{ toJson(github.event.commits) }}'
