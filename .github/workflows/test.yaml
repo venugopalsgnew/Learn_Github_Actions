@@ -10,4 +10,6 @@ jobs:
       - name: Print environmental variables
         run: printenv
       - name: Print full GitHub context
-        run: echo '${{ toJson(github) }}'
+        run: echo '${{ toJson(github) }}'      
+      - name: Print full GitHub context
+        run: echo '${{ github }}'
